@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(26, 144, 191);
+    position: relative;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.title{
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+
+}
+.navlinks{
+    height: 90px;
+    width: 35%;
+    left: 58%;
+    top: 5px;
+    position: absolute;
+    
+}
+li{
+    display: inline-flex;
+}
+a{
+    display: inline-flex;
+    
+    margin-top: 25px;
+    margin-left: 40px;
+    padding: 8px;
+    font-size: 20px;
+    
+    
+}
+.navlinks a:hover{
+    border-radius: 4px;
+    background-color: rgb(218, 77, 122);
+}
+.dropdown{
+    position: absolute;
+    display: none;
+}
+.navlinks li:hover .dropdown{
+    display: block;
+    height: 200px;
+    width: 120px;
+    margin-top: 65px;
+    margin-left: 35px;
+    
+    line-height: 0.1;
+    
+    text-align: center;
+    
+    
+}
+.dropdown a{
+    margin-left: 2px;
+    padding: 10px;
+    margin-top: 40px;
+    line-height: 1px;
+    
+}
+.dropdown a:hover{
+   background-color: aqua;
+   border-radius: 4px; 
+}
+.fas{
+    margin-top: -7px;
+    
+}
+.sub-menu{
+    position: absolute;
+    display: none;
+    
+}
+.navlinks .dropdown li:hover .sub-menu{
+    display: inline-block;
+    
+    height: 180px;
+    width: 120px;
+    
+    margin-left: 78px;
+    
+}
+button{
+    position: relative;
+    top: 27px;
+    left: 93%;
+    padding: 10px 12px;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: rgb(190, 6, 110);
+    color: white;
+}
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .navlinks{
+        margin-top: 80px;
+        left: 1px;
+        
+    }
+    .dropdown{
+        left: 90px;
+        top: 60px;
+    }
+    .sub-menu{
+       
+        left: 3px;
+        
+    }
+    button{
+        top: 23rem;
+        left: 15%;
+        
+    }
+}
+@media only screen and (max-width:780px) {
+    .navlinks{
+        top: 5px;
+        left: 0px;
+    }
+    .dropdown{
+        left: 100px;
+        top: 60px;
+    }
+    button{
+        top: 23rem;
+        left: 43px;
+    }
+}
